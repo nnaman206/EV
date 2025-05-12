@@ -13,20 +13,7 @@ function HomePage() {
     >
       <div className="min-h-screen">
         {/* Header */}
-        <header className="flex justify-between items-center px-10 py-4">
-          <p className="text-gray-500 text-xl">Company Name</p>
-
-          <nav className="space-x-5">
-            <ul className="flex gap-6">
-              <li className="text-gray-500 text-xl cursor-pointer hover:text-2xl transition-all duration-200">
-                Admin
-              </li>
-              <li className="text-gray-500 text-xl cursor-pointer hover:text-2xl transition-all duration-200">
-                Consumer
-              </li>
-            </ul>
-          </nav>
-        </header>
+        
 
         {/* Main Section */}
         <div
@@ -75,7 +62,7 @@ function HomePage() {
 
           <div className="flex flex-col md:flex-row justify-center items-stretch gap-8 px-4">
             {/* Card 1 */}
-            <div className="border border-gray-300 rounded-xl p-6 w-72 shadow-lg h-full flex flex-col items-start">
+            <div className="border border-black-300 rounded-xl p-6 w-72 shadow-lg h-full flex flex-col items-start">
               <MdLocationSearching className="text-black text-3xl mb-4" />
               <p className="font-bold text-lg text-start">
                 Login and Search For the Station name
@@ -86,7 +73,7 @@ function HomePage() {
             </div>
 
             {/* Card 2 */}
-            <div className="border border-gray-300 rounded-xl p-6 w-72 shadow-lg h-full flex flex-col items-start">
+            <div className="border border-black-300 rounded-xl p-6 w-72 shadow-lg h-full flex flex-col items-start">
               <GrMapLocation className="text-black text-3xl mb-4" />
               <p className="font-bold text-lg text-start">
                 Find the nearest location point
@@ -97,7 +84,7 @@ function HomePage() {
             </div>
 
             {/* Card 3 */}
-            <div className="border border-gray-300 rounded-xl p-6 w-72 shadow-lg h-full flex flex-col items-start">
+            <div className="border border-black-300 rounded-xl p-6 w-72 shadow-lg h-full flex flex-col items-start">
               <GrSelection className="text-black text-3xl mb-4" />
               <p className="font-bold text-lg text-start">
                 Select the slot and Follow the path on the map
