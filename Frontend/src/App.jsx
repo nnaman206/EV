@@ -10,19 +10,9 @@ import CurrentStage from './Component.after.login/Current_Stage';
 
 function App() {
   return (
-    <Routes>
-      {/* Parent route that uses Layout */}
-      <Route path="/" element={<Layout />}>
-        {/* Nested routes rendered inside <Outlet /> */}
-        <Route index element={<HomePage />} />
-        <Route path="admin" element={<RegisterAdmin />} />
-        <Route path="consumer" element={<RegisterUser />} />
-        <Route path="signin" element={<SignIn />} />
-        <Route path="login-user" element={<LoginUser />} />
-        <Route path="dashboard" element={<AfterAdminLogin />} />
-        <Route path="stage" element={<CurrentStage />} />
-      </Route>
-    </Routes>
+    <>
+    <SignIn/>
+    </>
   );
 }
 

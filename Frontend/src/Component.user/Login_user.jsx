@@ -24,24 +24,37 @@ function Login_user() {
    const validatePassword = (password) =>
      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
  
-   const confirm = (e) => {
-    e.preventDefault();
-  
-    const storedUser = JSON.parse(localStorage.getItem("userData"));
-  
-    if (!validateEmail(email)) return clipAct("Invalid Email Entered");
-    if (!validatePassword(password)) return clipAct("Invalid Password Entered");
-  
-    if (!storedUser || storedUser.email !== email || storedUser.password !== password) {
-      setEmail("");
-      setPassword("");
-    
-      return clipAct("User not registered. Please register first.");
-     
+   const confirm = async (e) => {
+  e.preventDefault();
+
+  if (!validateEmail(email)) return clipAct("Invalid Email Entered");
+  if (!validatePassword(password)) return clipAct("Invalid Password Entered");
+
+  try {
+    const response = await fetch("http://localhost:5000/api/user/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      return clipAct(data.message || "Login failed");
     }
-  
-    clipAct(`Welcome back, ${storedUser.email}`);
-  };
+
+    clipAct(`Welcome back, ${data.user.name}`);
+    // You may want to redirect or store the logged-in user
+    setEmail("");
+    setPassword("");
+  } catch (error) {
+    console.error("Login error:", error);
+    clipAct("Server error. Please try again.");
+  }
+};
+
   useEffect(() => {
     const storedUser = localStorage.getItem("user");
     if (!storedUser) {

@@ -23,22 +23,44 @@ function Register_user() {
   const validatePassword = (password) =>
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
 
-  const confirm = (e) => {
-    e.preventDefault();
-    if (!validateName(name)) return clipAct("Invalid Name Entered");
-    if (!validateEmail(email)) return clipAct("Invalid Email Entered");
-    if (!validatePassword(password)) return clipAct("Invalid Password Entered");
-    const userData={
-      name:name,
-      email:email,
-      password:password,
+ const confirm = async (e) => {
+  e.preventDefault();
+
+  if (!validateName(name)) return clipAct("Invalid Name Entered");
+  if (!validateEmail(email)) return clipAct("Invalid Email Entered");
+  if (!validatePassword(password)) return clipAct("Invalid Password Entered");
+
+  const userData = {
+    name,
+    email,
+    password,
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/api/user/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+      clipAct(data.message || "Registration failed");
+      return;
     }
-    localStorage.setItem("userData",JSON.stringify(userData));
-    clipAct("Welcome On Board. Kindly Login");
+
+    clipAct("User registered successfully! Please login.");
     setName("");
     setEmail("");
     setPassword("");
-  };
+  } catch (error) {
+    console.error("Registration error:", error);
+    clipAct("Server error. Please try again.");
+  }
+};
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">

@@ -1,13 +1,12 @@
-import React, { useState, useRef,useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { Navigate } from "react-router";
 
 function Sign_In() {
-  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
-  
   const [clipMsg, setClipMsg] = useState("");
   const [showPopup, setShowPopup] = useState(false);
+  const [redirect, setRedirect] = useState(false);
   const clipTimer = useRef(null);
 
   const clipAct = (msg) => {
@@ -23,29 +22,41 @@ function Sign_In() {
   const validatePassword = (password) =>
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
 
-  const confirm = (e) => {
+  const confirm = async (e) => {
     e.preventDefault();
-    
-
     if (!validateEmail(email)) return clipAct("Invalid Email Entered");
     if (!validatePassword(password)) return clipAct("Invalid Password Entered");
-    const users = JSON.parse(localStorage.getItem("userData")) || [];
-    const matchedUser = users.find(user => user.email === email && user.password === password);
-    
-    if (!matchedUser) {
-      return clipAct("User not registered or wrong credentials.");
-    }
-    clipAct(`Welcome back, ${matchedUser.name}`);
-    
-  };
-   useEffect(() => {
-      const storedUser = localStorage.getItem("userData");
-      if (!storedUser) {
-        clipAct("Please register first.");
-       
-      }
-    }, []);
 
+    try {
+      const res = await fetch("http://localhost:5000/api/admin/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) return clipAct(data.message || "Login failed");
+      clipAct(`Welcome back, ${data.name}`);
+      setRedirect(true); // Redirect after successful login
+
+    } catch (err) {
+      clipAct("Server error. Try again later.");
+    }
+  };
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("userData");
+    if (!storedUser) {
+      clipAct("Please register first.");
+    }
+  }, []);
+
+  if (redirect) {
+    return <Navigate to="/admin-dashboard" />; // Change this route as needed
+  }
+
+  
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
       <div className="flex w-[90%] max-w-5xl bg-white rounded-lg shadow-lg overflow-hidden h-[600px]">

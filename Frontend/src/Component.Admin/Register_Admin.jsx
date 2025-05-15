@@ -57,28 +57,52 @@ function Register_Admin() {
   const [slotData, setSlotData] = useState({});
   
 
-  const confirm = (e) => {
-    e.preventDefault();
-    if (!validateName(name)) return clipAct("Invalid Name Entered");
-    if (!validateEmail(email)) return clipAct("Invalid Email Entered");
-    if (!validatePassword(password)) return clipAct("Invalid Password Entered");
-    if (!address) return clipAct("Address is required");
-    if (!slots.every(s => s.available >= 0)) return clipAct("Invalid slot entry");
+  const confirm = async (e) => {
+  e.preventDefault();
 
-    const userData={
-      name:name,
-      email:email,
-      password:password,
-      address:address,
-      selectedTime:selectedTime,
-      slotCount:slotCount,
-      slotData:slotData,
-    }
-    localStorage.setItem("userData",JSON.stringify(userData));
+  if (!validateName(name)) return clipAct("Invalid Name Entered");
+  if (!validateEmail(email)) return clipAct("Invalid Email Entered");
+  if (!validatePassword(password)) return clipAct("Invalid Password Entered");
+  if (!address) return clipAct("Address is required");
+  if (!slots.every(s => s.available >= 0)) return clipAct("Invalid slot entry");
 
-    clipAct("Welcome On Board. Kindly Login");
-    console.log({ name, email, password, address, slots });
+  const userData = {
+    name,
+    email,
+    password,
+    address,
+    slotData,
   };
+
+  try {
+    const response = await fetch("http://localhost:5000/api/admin/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      clipAct("Welcome On Board. Kindly Login");
+      console.log(result); // Optional: Log response from server
+      setName("");
+      setAddress("");
+      setEmail("");
+      setPassword("");
+      setSelectedTime("");
+      setSlotCount("");
+      setSlotData({});
+    } else {
+      clipAct(result.message || "Registration failed");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    clipAct("Server Error");
+  }
+};
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyACtZ-0WuEIZ9waw01Fcm5-L-wuBNSAXnc" libraries={libraries}>
