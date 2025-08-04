@@ -11,7 +11,7 @@ function Header() {
           <ul className="flex gap-6">
             <li>
               <Link
-                to="/Register_Admin"
+                to="/register-admin"
                 className="text-gray-500 text-xl cursor-pointer hover:text-2xl transition-all duration-200"
               >
                 Admin
@@ -19,7 +19,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/Register_user"
+                to="/register-user"
                 className="text-gray-500 text-xl cursor-pointer hover:text-2xl transition-all duration-200"
               >
                 Consumer

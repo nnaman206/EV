@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState,useRef,useEffect} from "react"
+import { Link } from 'react-router-dom';
 
 function Login_user() {
  
@@ -70,15 +71,17 @@ function Login_user() {
  
      {/* Left Side */}
      <div className="w-1/2 bg-gradient-to-br from-cyan-500 to-blue-500 text-white flex flex-col justify-center items-center py-16 px-10">
-       <h1 className="text-4xl font-bold mb-6">Welcome!</h1>
-       <p className="mb-10 text-center text-lg">New Here?</p>
-       <button
-         type="button"
-         className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-       >
-         SIGN UP
-       </button>
-     </div>
+  <h1 className="text-4xl font-bold mb-6">Welcome!</h1>
+  <p className="mb-10 text-center text-lg">New Here?</p>
+
+  <Link
+    to="/register-user"
+    className="border border-white cursor-pointer text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
+  >
+    SIGN UP
+  </Link>
+</div>
+
  
      {/* Right Side */}
      <div className="w-1/2 py-12 px-10 flex flex-col justify-center">

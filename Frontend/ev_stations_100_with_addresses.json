@@ -1,0 +1,1802 @@
+[
+  {
+    "name": "Delhi EV Station 1",
+    "email": "delhi1@ev.com",
+    "password": "secure123",
+    "address": "Connaught Place, Block A, Delhi, Delhi, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 2",
+    "email": "chennai2@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 15,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 10,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Varanasi EV Station 3",
+    "email": "varanasi3@ev.com",
+    "password": "secure123",
+    "address": "Sigra, Near IP Mall, Varanasi, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Bhopal EV Station 4",
+    "email": "bhopal4@ev.com",
+    "password": "secure123",
+    "address": "MP Nagar, Zone-II, Near DB Mall, Bhopal, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 11,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Lucknow EV Station 5",
+    "email": "lucknow5@ev.com",
+    "password": "secure123",
+    "address": "Hazratganj, Near Sahara Ganj Mall, Lucknow, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 11,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh EV Station 6",
+    "email": "chandigarh6@ev.com",
+    "password": "secure123",
+    "address": "Sector 17 Plaza, Near Shopping Complex, Chandigarh, Chandigarh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Surat EV Station 7",
+    "email": "surat7@ev.com",
+    "password": "secure123",
+    "address": "Ghod Dod Road, Near VR Mall, Surat, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Ahmedabad EV Station 8",
+    "email": "ahmedabad8@ev.com",
+    "password": "secure123",
+    "address": "Prahlad Nagar, Near Venus Atlantis, Ahmedabad, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Patna EV Station 9",
+    "email": "patna9@ev.com",
+    "password": "secure123",
+    "address": "Fraser Road, Near Patna Junction, Patna, Bihar, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Bangalore EV Station 10",
+    "email": "bangalore10@ev.com",
+    "password": "secure123",
+    "address": "Koramangala 5th Block, Near Forum Mall, Bangalore, Karnataka, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Jaipur EV Station 11",
+    "email": "jaipur11@ev.com",
+    "password": "secure123",
+    "address": "Malviya Nagar, Near Gaurav Tower, Jaipur, Rajasthan, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 12,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Kolkata EV Station 12",
+    "email": "kolkata12@ev.com",
+    "password": "secure123",
+    "address": "Salt Lake, Sector V, Near Technopolis, Kolkata, West Bengal, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Pune EV Station 13",
+    "email": "pune13@ev.com",
+    "password": "secure123",
+    "address": "Viman Nagar, Near Phoenix Marketcity, Pune, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 15,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 10,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Varanasi EV Station 14",
+    "email": "varanasi14@ev.com",
+    "password": "secure123",
+    "address": "Sigra, Near IP Mall, Varanasi, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 15",
+    "email": "kanpur15@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Lucknow EV Station 16",
+    "email": "lucknow16@ev.com",
+    "password": "secure123",
+    "address": "Hazratganj, Near Sahara Ganj Mall, Lucknow, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 15,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Pune EV Station 17",
+    "email": "pune17@ev.com",
+    "password": "secure123",
+    "address": "Viman Nagar, Near Phoenix Marketcity, Pune, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Surat EV Station 18",
+    "email": "surat18@ev.com",
+    "password": "secure123",
+    "address": "Ghod Dod Road, Near VR Mall, Surat, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Nagpur EV Station 19",
+    "email": "nagpur19@ev.com",
+    "password": "secure123",
+    "address": "Sitabuldi, Near Empress Mall, Nagpur, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 12,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Varanasi EV Station 20",
+    "email": "varanasi20@ev.com",
+    "password": "secure123",
+    "address": "Sigra, Near IP Mall, Varanasi, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 21",
+    "email": "kanpur21@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Pune EV Station 22",
+    "email": "pune22@ev.com",
+    "password": "secure123",
+    "address": "Viman Nagar, Near Phoenix Marketcity, Pune, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 23",
+    "email": "kanpur23@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Jaipur EV Station 24",
+    "email": "jaipur24@ev.com",
+    "password": "secure123",
+    "address": "Malviya Nagar, Near Gaurav Tower, Jaipur, Rajasthan, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 12,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Ahmedabad EV Station 25",
+    "email": "ahmedabad25@ev.com",
+    "password": "secure123",
+    "address": "Prahlad Nagar, Near Venus Atlantis, Ahmedabad, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 11,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Nagpur EV Station 26",
+    "email": "nagpur26@ev.com",
+    "password": "secure123",
+    "address": "Sitabuldi, Near Empress Mall, Nagpur, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 10,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Hyderabad EV Station 27",
+    "email": "hyderabad27@ev.com",
+    "password": "secure123",
+    "address": "HiTech City Road, Near Cyber Towers, Hyderabad, Telangana, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 28",
+    "email": "chennai28@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Lucknow EV Station 29",
+    "email": "lucknow29@ev.com",
+    "password": "secure123",
+    "address": "Hazratganj, Near Sahara Ganj Mall, Lucknow, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 10,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Jaipur EV Station 30",
+    "email": "jaipur30@ev.com",
+    "password": "secure123",
+    "address": "Malviya Nagar, Near Gaurav Tower, Jaipur, Rajasthan, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Kochi EV Station 31",
+    "email": "kochi31@ev.com",
+    "password": "secure123",
+    "address": "MG Road, Near Shenoys Theatre, Kochi, Kerala, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Kolkata EV Station 32",
+    "email": "kolkata32@ev.com",
+    "password": "secure123",
+    "address": "Salt Lake, Sector V, Near Technopolis, Kolkata, West Bengal, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 15,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Bhopal EV Station 33",
+    "email": "bhopal33@ev.com",
+    "password": "secure123",
+    "address": "MP Nagar, Zone-II, Near DB Mall, Bhopal, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 34",
+    "email": "chennai34@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Bangalore EV Station 35",
+    "email": "bangalore35@ev.com",
+    "password": "secure123",
+    "address": "Koramangala 5th Block, Near Forum Mall, Bangalore, Karnataka, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Hyderabad EV Station 36",
+    "email": "hyderabad36@ev.com",
+    "password": "secure123",
+    "address": "HiTech City Road, Near Cyber Towers, Hyderabad, Telangana, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 11,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 37",
+    "email": "kanpur37@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Bangalore EV Station 38",
+    "email": "bangalore38@ev.com",
+    "password": "secure123",
+    "address": "Koramangala 5th Block, Near Forum Mall, Bangalore, Karnataka, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 39",
+    "email": "kanpur39@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Hyderabad EV Station 40",
+    "email": "hyderabad40@ev.com",
+    "password": "secure123",
+    "address": "HiTech City Road, Near Cyber Towers, Hyderabad, Telangana, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Varanasi EV Station 41",
+    "email": "varanasi41@ev.com",
+    "password": "secure123",
+    "address": "Sigra, Near IP Mall, Varanasi, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Patna EV Station 42",
+    "email": "patna42@ev.com",
+    "password": "secure123",
+    "address": "Fraser Road, Near Patna Junction, Patna, Bihar, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Nagpur EV Station 43",
+    "email": "nagpur43@ev.com",
+    "password": "secure123",
+    "address": "Sitabuldi, Near Empress Mall, Nagpur, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Lucknow EV Station 44",
+    "email": "lucknow44@ev.com",
+    "password": "secure123",
+    "address": "Hazratganj, Near Sahara Ganj Mall, Lucknow, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 10,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Delhi EV Station 45",
+    "email": "delhi45@ev.com",
+    "password": "secure123",
+    "address": "Connaught Place, Block A, Delhi, Delhi, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Bangalore EV Station 46",
+    "email": "bangalore46@ev.com",
+    "password": "secure123",
+    "address": "Koramangala 5th Block, Near Forum Mall, Bangalore, Karnataka, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 47",
+    "email": "kanpur47@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 12,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 48",
+    "email": "kanpur48@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Kolkata EV Station 49",
+    "email": "kolkata49@ev.com",
+    "password": "secure123",
+    "address": "Salt Lake, Sector V, Near Technopolis, Kolkata, West Bengal, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Pune EV Station 50",
+    "email": "pune50@ev.com",
+    "password": "secure123",
+    "address": "Viman Nagar, Near Phoenix Marketcity, Pune, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Indore EV Station 51",
+    "email": "indore51@ev.com",
+    "password": "secure123",
+    "address": "Vijay Nagar, Near C21 Mall, Indore, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Hyderabad EV Station 52",
+    "email": "hyderabad52@ev.com",
+    "password": "secure123",
+    "address": "HiTech City Road, Near Cyber Towers, Hyderabad, Telangana, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Kolkata EV Station 53",
+    "email": "kolkata53@ev.com",
+    "password": "secure123",
+    "address": "Salt Lake, Sector V, Near Technopolis, Kolkata, West Bengal, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Ahmedabad EV Station 54",
+    "email": "ahmedabad54@ev.com",
+    "password": "secure123",
+    "address": "Prahlad Nagar, Near Venus Atlantis, Ahmedabad, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 15,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 11,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 55",
+    "email": "kanpur55@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Jaipur EV Station 56",
+    "email": "jaipur56@ev.com",
+    "password": "secure123",
+    "address": "Malviya Nagar, Near Gaurav Tower, Jaipur, Rajasthan, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh EV Station 57",
+    "email": "chandigarh57@ev.com",
+    "password": "secure123",
+    "address": "Sector 17 Plaza, Near Shopping Complex, Chandigarh, Chandigarh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 11,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Kochi EV Station 58",
+    "email": "kochi58@ev.com",
+    "password": "secure123",
+    "address": "MG Road, Near Shenoys Theatre, Kochi, Kerala, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 59",
+    "email": "kanpur59@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Bangalore EV Station 60",
+    "email": "bangalore60@ev.com",
+    "password": "secure123",
+    "address": "Koramangala 5th Block, Near Forum Mall, Bangalore, Karnataka, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Pune EV Station 61",
+    "email": "pune61@ev.com",
+    "password": "secure123",
+    "address": "Viman Nagar, Near Phoenix Marketcity, Pune, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Patna EV Station 62",
+    "email": "patna62@ev.com",
+    "password": "secure123",
+    "address": "Fraser Road, Near Patna Junction, Patna, Bihar, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Surat EV Station 63",
+    "email": "surat63@ev.com",
+    "password": "secure123",
+    "address": "Ghod Dod Road, Near VR Mall, Surat, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Indore EV Station 64",
+    "email": "indore64@ev.com",
+    "password": "secure123",
+    "address": "Vijay Nagar, Near C21 Mall, Indore, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Kochi EV Station 65",
+    "email": "kochi65@ev.com",
+    "password": "secure123",
+    "address": "MG Road, Near Shenoys Theatre, Kochi, Kerala, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Indore EV Station 66",
+    "email": "indore66@ev.com",
+    "password": "secure123",
+    "address": "Vijay Nagar, Near C21 Mall, Indore, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 12,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 67",
+    "email": "chennai67@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 68",
+    "email": "chennai68@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 15,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Hyderabad EV Station 69",
+    "email": "hyderabad69@ev.com",
+    "password": "secure123",
+    "address": "HiTech City Road, Near Cyber Towers, Hyderabad, Telangana, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Ahmedabad EV Station 70",
+    "email": "ahmedabad70@ev.com",
+    "password": "secure123",
+    "address": "Prahlad Nagar, Near Venus Atlantis, Ahmedabad, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Ahmedabad EV Station 71",
+    "email": "ahmedabad71@ev.com",
+    "password": "secure123",
+    "address": "Prahlad Nagar, Near Venus Atlantis, Ahmedabad, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 12,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Patna EV Station 72",
+    "email": "patna72@ev.com",
+    "password": "secure123",
+    "address": "Fraser Road, Near Patna Junction, Patna, Bihar, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 9,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Patna EV Station 73",
+    "email": "patna73@ev.com",
+    "password": "secure123",
+    "address": "Fraser Road, Near Patna Junction, Patna, Bihar, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Lucknow EV Station 74",
+    "email": "lucknow74@ev.com",
+    "password": "secure123",
+    "address": "Hazratganj, Near Sahara Ganj Mall, Lucknow, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 75",
+    "email": "chennai75@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh EV Station 76",
+    "email": "chandigarh76@ev.com",
+    "password": "secure123",
+    "address": "Sector 17 Plaza, Near Shopping Complex, Chandigarh, Chandigarh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Kochi EV Station 77",
+    "email": "kochi77@ev.com",
+    "password": "secure123",
+    "address": "MG Road, Near Shenoys Theatre, Kochi, Kerala, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Ahmedabad EV Station 78",
+    "email": "ahmedabad78@ev.com",
+    "password": "secure123",
+    "address": "Prahlad Nagar, Near Venus Atlantis, Ahmedabad, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Kochi EV Station 79",
+    "email": "kochi79@ev.com",
+    "password": "secure123",
+    "address": "MG Road, Near Shenoys Theatre, Kochi, Kerala, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Surat EV Station 80",
+    "email": "surat80@ev.com",
+    "password": "secure123",
+    "address": "Ghod Dod Road, Near VR Mall, Surat, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 15,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Patna EV Station 81",
+    "email": "patna81@ev.com",
+    "password": "secure123",
+    "address": "Fraser Road, Near Patna Junction, Patna, Bihar, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 7,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Bangalore EV Station 82",
+    "email": "bangalore82@ev.com",
+    "password": "secure123",
+    "address": "Koramangala 5th Block, Near Forum Mall, Bangalore, Karnataka, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 11,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 15,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Indore EV Station 83",
+    "email": "indore83@ev.com",
+    "password": "secure123",
+    "address": "Vijay Nagar, Near C21 Mall, Indore, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Kochi EV Station 84",
+    "email": "kochi84@ev.com",
+    "password": "secure123",
+    "address": "MG Road, Near Shenoys Theatre, Kochi, Kerala, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 9,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Indore EV Station 85",
+    "email": "indore85@ev.com",
+    "password": "secure123",
+    "address": "Vijay Nagar, Near C21 Mall, Indore, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 10,
+        "bookedSlots": 7
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh EV Station 86",
+    "email": "chandigarh86@ev.com",
+    "password": "secure123",
+    "address": "Sector 17 Plaza, Near Shopping Complex, Chandigarh, Chandigarh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 12,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 87",
+    "email": "kanpur87@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 88",
+    "email": "kanpur88@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 5
+      }
+    ]
+  },
+  {
+    "name": "Delhi EV Station 89",
+    "email": "delhi89@ev.com",
+    "password": "secure123",
+    "address": "Connaught Place, Block A, Delhi, Delhi, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 15,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Chandigarh EV Station 90",
+    "email": "chandigarh90@ev.com",
+    "password": "secure123",
+    "address": "Sector 17 Plaza, Near Shopping Complex, Chandigarh, Chandigarh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 5,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Nagpur EV Station 91",
+    "email": "nagpur91@ev.com",
+    "password": "secure123",
+    "address": "Sitabuldi, Near Empress Mall, Nagpur, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Indore EV Station 92",
+    "email": "indore92@ev.com",
+    "password": "secure123",
+    "address": "Vijay Nagar, Near C21 Mall, Indore, Madhya Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Chennai EV Station 93",
+    "email": "chennai93@ev.com",
+    "password": "secure123",
+    "address": "T Nagar, Near Panagal Park, Chennai, Tamil Nadu, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 6
+      }
+    ]
+  },
+  {
+    "name": "Pune EV Station 94",
+    "email": "pune94@ev.com",
+    "password": "secure123",
+    "address": "Viman Nagar, Near Phoenix Marketcity, Pune, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 6,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 8,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Kanpur EV Station 95",
+    "email": "kanpur95@ev.com",
+    "password": "secure123",
+    "address": "Swaroop Nagar, Near Rave 3 Mall, Kanpur, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 14,
+        "bookedSlots": 3
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 6,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Kolkata EV Station 96",
+    "email": "kolkata96@ev.com",
+    "password": "secure123",
+    "address": "Salt Lake, Sector V, Near Technopolis, Kolkata, West Bengal, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 8,
+        "bookedSlots": 4
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 5,
+        "bookedSlots": 3
+      }
+    ]
+  },
+  {
+    "name": "Surat EV Station 97",
+    "email": "surat97@ev.com",
+    "password": "secure123",
+    "address": "Ghod Dod Road, Near VR Mall, Surat, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 15,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 7,
+        "bookedSlots": 2
+      }
+    ]
+  },
+  {
+    "name": "Lucknow EV Station 98",
+    "email": "lucknow98@ev.com",
+    "password": "secure123",
+    "address": "Hazratganj, Near Sahara Ganj Mall, Lucknow, Uttar Pradesh, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 1
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 14,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Surat EV Station 99",
+    "email": "surat99@ev.com",
+    "password": "secure123",
+    "address": "Ghod Dod Road, Near VR Mall, Surat, Gujarat, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 10,
+        "bookedSlots": 5
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 15,
+        "bookedSlots": 4
+      }
+    ]
+  },
+  {
+    "name": "Mumbai EV Station 100",
+    "email": "mumbai100@ev.com",
+    "password": "secure123",
+    "address": "Marine Drive, Opposite Pizza By The Bay, Mumbai, Maharashtra, India",
+    "slotData": [
+      {
+        "date": "2025-07-16",
+        "totalSlots": 13,
+        "bookedSlots": 2
+      },
+      {
+        "date": "2025-07-17",
+        "totalSlots": 13,
+        "bookedSlots": 6
+      }
+    ]
+  }
+]

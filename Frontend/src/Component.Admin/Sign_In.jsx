@@ -1,14 +1,14 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, } from "react";
 import { Navigate } from "react-router";
 
 function Sign_In() {
-  const [email, setEmail] = useState("");
+   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [clipMsg, setClipMsg] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [redirect, setRedirect] = useState(false);
+  const [userData, setUserData] = useState(null);  // <-- Add this line
   const clipTimer = useRef(null);
-
   const clipAct = (msg) => {
     setClipMsg(msg);
     setShowPopup(true);
@@ -22,7 +22,7 @@ function Sign_In() {
   const validatePassword = (password) =>
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(password);
 
-  const confirm = async (e) => {
+   const confirm = async (e) => {
     e.preventDefault();
     if (!validateEmail(email)) return clipAct("Invalid Email Entered");
     if (!validatePassword(password)) return clipAct("Invalid Password Entered");
@@ -37,23 +37,19 @@ function Sign_In() {
       const data = await res.json();
 
       if (!res.ok) return clipAct(data.message || "Login failed");
-      clipAct(`Welcome back, ${data.name}`);
-      setRedirect(true); // Redirect after successful login
+     clipAct(`Welcome back, ${data.user?.name || "Admin"}`);
+
+
+      setUserData({id: data.user._id,name:data.user.name});   // Save data here
+      setRedirect(true);   // Then redirect
 
     } catch (err) {
       clipAct("Server error. Try again later.");
     }
   };
 
-  useEffect(() => {
-    const storedUser = localStorage.getItem("userData");
-    if (!storedUser) {
-      clipAct("Please register first.");
-    }
-  }, []);
-
-  if (redirect) {
-    return <Navigate to="/admin-dashboard" />; // Change this route as needed
+  if (redirect && userData) {
+    return <Navigate to="/After_Admin_Login" state={{ name: userData.name }} />;
   }
 
   
@@ -95,7 +91,7 @@ function Sign_In() {
             
             <button
               type="submit"
-              className="bg-blue-500 text-white px-4 py-3 rounded-full hover:bg-blue-600 transition"
+              className="bg-blue-500 text-white cursor-pointer px-4 py-3 rounded-full hover:bg-blue-600 transition"
             >
               SIGN IN
             </button>

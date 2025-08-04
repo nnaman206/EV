@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+
 
 function Register_user() {
   const [name, setName] = useState("");
@@ -64,20 +66,21 @@ function Register_user() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
-      <h1>REGISTER User</h1>
+      <h1></h1>
   <div className="flex w-[90%] max-w-5xl bg-white rounded-lg shadow-lg overflow-hidden h-[600px]">
 
     {/* Left Side */}
     <div className="w-1/2 bg-gradient-to-br from-cyan-500 to-blue-500 text-white flex flex-col justify-center items-center py-16 px-10">
-      <h1 className="text-4xl font-bold mb-6">Welcome Back!</h1>
-      <p className="mb-10 text-center text-lg">To keep connected with us please login with your personal info</p>
-      <button
-        type="button"
-        className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-      >
-        SIGN IN
-      </button>
-    </div>
+  <h1 className="text-4xl font-bold mb-6">Welcome Back!</h1>
+  <p className="mb-10 text-center text-lg">To keep connected with us please login with your personal info</p>
+  
+  <Link
+     to="/login-user"
+    className="border border-white cursor-pointer text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
+  >
+    SIGN IN
+  </Link>
+</div>
 
     {/* Right Side */}
     <div className="w-1/2 py-12 px-10 flex flex-col justify-center">

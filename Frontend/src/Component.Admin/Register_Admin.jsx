@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { LoadScript, Autocomplete } from "@react-google-maps/api";
+import { Link } from "react-router-dom";
 
 const libraries = ["places"];
 
@@ -109,18 +110,19 @@ function Register_Admin() {
       <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
       <div className="flex w-[90%] max-w-5xl bg-white rounded-lg shadow-lg overflow-hidden">
           {/* Left Side */}
-          <div className="w-1/2 bg-gradient-to-br from-red-500 to-blue-500 text-white flex flex-col justify-center items-center py-16 px-10">
-            <h1 className="text-4xl font-bold mb-6">Welcome Back!</h1>
-            <p className="mb-10 text-center text-lg">
-              To keep connected with us please login with your personal info
-            </p>
-            <button
-              type="button"
-              className="border border-white text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
-            >
-              SIGN IN
-            </button>
-          </div>
+         <div className="w-1/2 bg-gradient-to-br from-red-500 to-blue-500 text-white flex flex-col justify-center items-center py-16 px-10">
+  <h1 className="text-4xl font-bold mb-6">Welcome Back!</h1>
+  <p className="mb-10 text-center text-lg">
+    To keep connected with us please login with your personal info
+  </p>
+  
+  <Link
+    to="/sign-in"
+    className="border border-white cursor-pointer text-white px-6 py-2 rounded-full hover:bg-white hover:text-blue-600 transition"
+  >
+    SIGN IN
+  </Link>
+</div>
 
           {/* Right Side */}
           <div className="w-1/2 py-10 px-8 flex flex-col justify-center overflow-y-auto">

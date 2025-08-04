@@ -1,54 +1,109 @@
-import React, { useEffect, useState } from 'react';
-import {useNavigate} from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function After_Admin_Login() {
-  const [stationDetails, setStationDetails] = useState({
-    stationName: "EV Station Alpha", // Replace with the actual station
-    address: "Dehradun EV Park, Sector 21",
-    totalSlots: 3
-  });
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  // Get adminId passed via React Router state on login
+  const { adminId } = location.state || {};
+
+  const [stationDetails, setStationDetails] = useState(null);
   const [bookedSlots, setBookedSlots] = useState(0);
   const [userList, setUserList] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
+  // Redirect to login if no adminId (means unauthorized access)
   useEffect(() => {
-    const bookings = JSON.parse(localStorage.getItem('allBookings')) || [];
+    if (!adminId) {
+      navigate("/sign_in");
+    }
+  }, [adminId, navigate]);
 
-    // Filter bookings for this admin’s station
-    const filtered = bookings.filter(
-      booking =>
-        booking.stationName === stationDetails.stationName &&
-        booking.address === stationDetails.address
+  // Fetch station + bookings for this admin from backend API
+  useEffect(() => {
+    if (!adminId) return;
+
+    async function fetchData() {
+      try {
+        setLoading(true);
+        setError(null);
+
+        const res = await fetch(
+          `http://localhost:5000/api/admin/${adminId}/station`
+        );
+
+        if (!res.ok) {
+          throw new Error("Failed to fetch station data");
+        }
+
+        const stationData = await res.json();
+
+        setStationDetails(stationData.station);
+        setBookedSlots(stationData.bookings.length);
+        setUserList(
+          stationData.bookings.map((b) => ({
+            name: b.userName,
+            id: b.userId,
+          }))
+        );
+
+        setLoading(false);
+      } catch (err) {
+        setLoading(false);
+        setError(err.message || "Error loading data");
+      }
+    }
+
+    fetchData();
+  }, [adminId]);
+
+  if (loading) return <div className="p-6">Loading station data...</div>;
+
+  if (error)
+    return (
+      <div className="p-6 text-red-600 font-bold">
+        Error: {error}. Please try again later.
+      </div>
     );
 
-    setBookedSlots(filtered.length);
-    setUserList(
-      filtered.map(b => ({
-        name: b.userName,
-        id: b.userId
-      }))
+  if (!stationDetails)
+    return (
+      <div className="p-6">
+        <h2>No station data found for this admin.</h2>
+      </div>
     );
-  }, [stationDetails]);
 
   return (
-    <div className="p-6">
+    <div className="p-6 max-w-3xl mx-auto">
       <h1 className="text-2xl font-bold mb-4">Station Overview</h1>
 
-      <div className="bg-gray-100 p-4 rounded shadow space-y-3">
+      <div className="bg-gray-100 p-6 rounded shadow space-y-4">
         <h2 className="text-xl font-semibold">{stationDetails.stationName}</h2>
-        <p><strong>Address:</strong> {stationDetails.address}</p>
-        <p><strong>Slots Booked:</strong> {bookedSlots}</p>
-        <p><strong>Slots Available:</strong> {stationDetails.totalSlots - bookedSlots}</p>
+        <p>
+          <strong>Address:</strong> {stationDetails.address}
+        </p>
+        <p>
+          <strong>Slots Booked:</strong> {bookedSlots}
+        </p>
+        <p>
+          <strong>Slots Available:</strong>{" "}
+          {stationDetails.totalSlots - bookedSlots}
+        </p>
 
-        <div className="mt-2">
+        <div>
           <strong>Users Booked:</strong>
           {userList.length > 0 ? (
-            <ul className="list-disc ml-6">
+            <ul className="list-disc ml-6 mt-2">
               {userList.map((user, i) => (
-                <li key={i}>{user.name} (ID: {user.id})</li>
+                <li key={i}>
+                  {user.name} (ID: {user.id})
+                </li>
               ))}
             </ul>
           ) : (
-            <p className="text-gray-500">No users booked yet.</p>
+            <p className="text-gray-500 mt-2">No users booked yet.</p>
           )}
         </div>
       </div>

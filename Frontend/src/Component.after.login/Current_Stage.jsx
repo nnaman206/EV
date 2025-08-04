@@ -1,9 +1,25 @@
 import React, { useState } from 'react';
 import { FaLocationArrow } from "react-icons/fa";
 
+// Static data moved outside the component (best practice)
+const slots = ['9:00 AM - 10:00 AM', '11:00 AM - 12:00 PM', '2:00 PM - 3:00 PM'];
+
+const stationData = {
+  "Dehradun": [
+    { name: "Rajpur EV Station", address: "Rajpur Road, Dehradun, Uttarakhand" },
+    { name: "ISBT EV Hub", address: "ISBT, Dehradun, Uttarakhand" },
+    { name: "Clock Tower Charging", address: "Near Clock Tower, Dehradun, Uttarakhand" }
+  ],
+  "Delhi": [
+    { name: "Connaught Place EV", address: "Connaught Place, New Delhi" },
+    { name: "Saket EV Point", address: "Saket, New Delhi" }
+  ]
+};
+
 function Current_Stage() {
-  const userData = JSON.parse(localStorage.getItem('userData'));
+  const userData = JSON.parse(localStorage.getItem('userData')) || {};
   const bookingData = JSON.parse(localStorage.getItem('bookingData'));
+
   const [isCancelled, setIsCancelled] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -14,21 +30,7 @@ function Current_Stage() {
   const [time, setTime] = useState('');
   const [slot, setSlot] = useState('');
 
-  const slots = ['9:00 AM - 10:00 AM', '11:00 AM - 12:00 PM', '2:00 PM - 3:00 PM'];
-
-  const stationData = {
-    "Dehradun": [
-      { name: "Rajpur EV Station", address: "Rajpur Road, Dehradun, Uttarakhand" },
-      { name: "ISBT EV Hub", address: "ISBT, Dehradun, Uttarakhand" },
-      { name: "Clock Tower Charging", address: "Near Clock Tower, Dehradun, Uttarakhand" }
-    ],
-    "Delhi": [
-      { name: "Connaught Place EV", address: "Connaught Place, New Delhi" },
-      { name: "Saket EV Point", address: "Saket, New Delhi" }
-    ]
-  };
-
-  const stationOptions = city && stationData[city] ? stationData[city] : [];
+  const stationOptions = stationData[city] || [];
 
   const handleCancel = () => {
     localStorage.removeItem('bookingData');
@@ -41,25 +43,51 @@ function Current_Stage() {
     window.location.reload();
   };
 
-  const confirmBooking = () => {
+  const confirmBooking = async () => {
+    // Basic validation
+    if (!city || !station || !address || !date || !time || !slot) {
+      alert("Please fill in all booking details.");
+      return;
+    }
+
     const newBooking = {
+      userId: userData._id,
+      userName: userData.name,
       city,
       stationName: station,
       address,
       date,
       time,
-      slot
+      slot,
     };
-    localStorage.setItem('bookingData', JSON.stringify(newBooking));
-    setShowPopup(false);
-    window.location.reload();
+
+    try {
+      const response = await fetch("http://localhost:5000/api/booking", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(newBooking),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        localStorage.setItem("bookingData", JSON.stringify(newBooking));
+        setShowPopup(false);
+        window.location.reload();
+      } else {
+        alert(result.message || "Booking failed");
+      }
+    } catch (error) {
+      console.error("Booking failed:", error);
+      alert("Something went wrong while processing your booking. Please try again later.");
+    }
   };
 
   return (
     <div className="w-96 mx-auto mt-6 p-4 rounded-xl shadow-md bg-amber-100">
       <div className="mb-4 text-center">
         <h2 className="text-2xl font-bold text-black">
-          Welcome, {userData?.name || 'User'}
+          Welcome, {userData.name || 'User'}
         </h2>
       </div>
 
@@ -127,10 +155,11 @@ function Current_Stage() {
             <h2 className="text-xl font-bold mb-2">New Booking</h2>
             <input
               type="text"
-              placeholder="City"
+              placeholder="City (e.g., Dehradun, Delhi)"
               value={city}
               onChange={(e) => {
-                setCity(e.target.value);
+                const input = e.target.value;
+                setCity(input);
                 setStation('');
                 setAddress('');
               }}
