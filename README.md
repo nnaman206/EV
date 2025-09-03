@@ -1,16 +1,9 @@
-EV Charger Allocator
-[][contributors-url]
-[][forks-url]
-[][stars-url]
-[][issues-url]
-[][license-url]
 
-<!-- PROJECT LOGO -->
 
 <br />
 <div align="center">
 <a href="[YOUR_PROJECT_LINK]">
-<img src="images/logo.png" alt="Logo" width="80" height="80">
+
 </a>
 <h3 align="center">EV Charger Allocator</h3>
 <p align="center">
@@ -18,9 +11,8 @@ An intelligent system to efficiently allocate available electric vehicle charger
 <br />
 <a href="[YOUR_DEMO_LINK]"><strong>View Demo »</strong></a>
 ·
-<a href="https://www.google.com/search?q=https://github.com/%5Byour_username%5D/ev-charger-allocator/issues">Report Bug</a>
-·
-<a href="https://www.google.com/search?q=https://github.com/%5Byour_username%5D/ev-charger-allocator/issues">Request Feature</a>
+
+
 </p>
 </div>
 
