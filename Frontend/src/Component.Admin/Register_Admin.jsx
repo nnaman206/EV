@@ -100,7 +100,7 @@ function Register_Admin() {
   };
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAfCtRVYcoYsJKCmbhriEGMPcrVb7yE52U" libraries={libraries}>
+    <LoadScript googleMapsApiKey="YOUR GOOGLE API KEY" libraries={libraries}>
       <div className="flex items-center justify-center min-h-screen bg-gray-100 relative">
         <div className="flex w-[90%] max-w-5xl bg-white rounded-lg shadow-lg overflow-hidden">
           {/* Left Side */}
