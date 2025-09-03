@@ -11,7 +11,7 @@ import CurrentStage from './Component.after.login/Current_Stage';
 function App() {
   return (
     <>
-  <HomePage/>
+  <HomePage />
     </>
   );
 }

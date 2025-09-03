@@ -36,10 +36,14 @@ function Register_user() {
     name,
     email,
     password,
+    address:null,
+    stationName:null,
+    slotData: [],
+
   };
 
   try {
-    const response = await fetch("http://localhost:5000/api/user/register", {
+    const response = await fetch("http://localhost:3000/api/user/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

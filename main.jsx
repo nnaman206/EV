@@ -1,4 +1,9 @@
 
+
+
+
+
+
 import React from 'react'; // ✅ Import React for JSX to work
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -11,8 +16,8 @@ import RegisterAdmin from './Component.Admin/Register_Admin.jsx';
 import RegisterUser from './Component.user/Register_user.jsx';
 import LoginUser from './Component.user/Login_user.jsx'; // ✅ Import LoginUser component
 import Sign_In from './Component.Admin/Sign_In.jsx';
-import After_Admin_Login from './Component.after.Admin_Login/After_Admin_Login.jsx'; // 
-import  Current_Stage from './Component.after.login/Current_Stage.jsx';
+import adminLogin from './Component.after.Admin_Login/After_Admin_Login.jsx'; // ✅ Import After_Admin_Login component
+ 
 
 const router=createBrowserRouter([
   {
@@ -40,22 +45,15 @@ const router=createBrowserRouter([
         element:<Sign_In/>
       },
      
-     
-      
-      {path:"/userDashboard",
-      element:<Current_Stage/>
-      },
-      {path:"/userDashboard/:id",
-      element:<Current_Stage/>
-      },
       {
-        path:"/adminDashboard",
-        element:<After_Admin_Login/>
-      },
-       {
          path: "*",
           element: <div className="text-center mt-10 text-xl text-red-500">404 - Page Not Found</div>,
+      },
+      {
+        path:"admin-login",
+        element:<adminLogin/>
       }
+
       
     ]
   }
